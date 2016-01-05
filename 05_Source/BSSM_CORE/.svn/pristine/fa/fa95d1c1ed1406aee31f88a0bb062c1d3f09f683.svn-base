@@ -1,0 +1,42 @@
+package com.org.bssm.test.domain;
+
+import com.org.bssm.base.entity.BaseEntity;
+
+public class Person extends BaseEntity{
+
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 14167456654308292L;
+
+	private Integer id;
+
+    private String name;
+
+    private Integer age;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+}
